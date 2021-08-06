@@ -21,7 +21,10 @@ Examples of the input/output files can be found in the tests folder.
 
 # Note:
 The file inputs I was given assumes that the newline is denoted by 2 characters.
-If your newline is denoted by a single '\n' character, you will need to edit the lines that are similar to string[nchar-2] = '\0'; to string[nchar-1] = '\0';
+If your newline is denoted by a single '\n' character, you will need to edit the lines that are similar to 
+string[nchar-2] = '\0';
+to
+string[nchar-1] = '\0';
 
 # Runtime:
 The slowest runtime step is the dynamic programming step for calculating the string editing. For each pair of strings, this should occur in O(n * m) time, where n and m are the lengths of the strings. For S strings, this then makes the runtime O(S * n * m) time.
